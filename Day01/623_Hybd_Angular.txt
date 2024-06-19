@@ -1,0 +1,31 @@
+			Welcome To Angular Module 
+				  Sumit Raokhande
+
+- B.E.Electronics, KBP satara
+- M.Tech Electronics, Walchand College Sangli
+- C-Dac Wimc , Sunbeam pune
+- worked as Mobile Application developer at tivre business solution
+- worked on J2ME,Symbian,Windows Mobile,Reaserach Motion
+- Worked as Android developer at veetron 
+- Live android application prasieo,autohub,garage
+- Worked as JDE Developer of Oracle Product
+- Worked as OpenSDK developer
+- work as angular developer
+- work on google cloud & docker 
+
+Git Hub Repo => Download code stuff from here 
+https://github.com/Javabykiran-Angular/623_hybd_Angular.git
+
+
+- daily session arround 2 to 3 hr => Mon to frid 
+- Angular freamwork
+- All codes will given 
+- Theroy + Practical 
+
+- oops Concept
+- Basic of HTML & CSS 
+- Two way communication
+
+
+
+
