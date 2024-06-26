@@ -1,0 +1,14 @@
+<p>eventbinding1 works!</p>
+<!-- syntax
+    (eventname)="eventHandler"
+-->
+
+<button (click)="onClick()" >Click</button> <br><br> 
+
+<img (click)="onImage()" id="myimg" src="../../assets/tka.jpeg" alt="" title="On Click" ><br><br>
+
+<input #inputname type="text" placeholder="Enter the Name" class="form-control w-25"> <br><br>
+<button (click)="onSend(inputname.value)" >Send</button><br><br>
+
+<input #inputname1 type="text" placeholder="Enter the Name" class="form-control w-25"> <br><br>
+<button (click)="onSend1(inputname1)" >Send</button><br><br>

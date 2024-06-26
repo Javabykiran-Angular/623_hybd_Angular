@@ -1,0 +1,22 @@
+<p>classbinding works!</p>
+<!-- if u want apply dynamically css classes then we go for class binding 
+    [class]="propertyname"
+-->
+
+<h2 [class]="myclass" >Apply class Binding </h2>
+
+<h2 [class.danger]="rating<4" 
+[class.warning]="rating>4"
+>Apply class Binding on Condition</h2>
+
+<!-- ngClass 
+    - It is attribute Directive 
+    - It is used to set multiple css Classes at a time 
+    - U can apply any html tag 
+    - u hv to set a json Object 
+    - [ngClass]="jsonObj"
+-->
+
+<div [ngClass]="jsonObj" >
+    Apply ngClass Attribute Directive 
+</div>

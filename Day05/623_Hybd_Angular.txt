@@ -1,0 +1,53 @@
+Last Lecture Agenda
+1 Property Binding
+	<input [value]="name">
+	<img [src]="imgUrl">
+	
+	.ts 
+	name:string='Sumit';
+	imgUrl:string='...'
+	
+2 Difference between String interpolation and Property Binding
+	<div hidden=" {{isHidden}} ">
+		...
+	</div>
+	<div [hidden]="isHidden">
+		...
+	</div>
+	
+	
+	.ts 
+	isHidden:boolean=false;
+		
+	
+3 Style Binding
+	<h2 [style.color]="mycolor" >...</h2>
+	<h2 [style.color]="rating<4?'red':'green'" >...</h2>
+	<div [ngStyle]="json">
+		..
+	</div>
+	
+	.ts file 
+	mycolor:string='red';
+	json={
+		color:'blue',
+		fontFamily:'..',
+		'font-Size':'32px'
+	}
+
+
+summary & Interview Questions
+1 What is Property Binding
+2 Explain the Difference between String interpolation and Property Binding
+3 How to use Style Binding
+
+Today's Lecture Agenda
+1 Class Binding
+2 Event Binding
+3 Click Event
+4 Template Ref Variable
+
+summary & Interview Questions
+1 How to use Class Binding
+2 Explain event Binding
+
