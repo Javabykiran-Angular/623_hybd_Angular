@@ -1,0 +1,27 @@
+<p>eventbinding2 works!</p>
+<!-- 
+<input #num1 type="text" class="form-control w-25" placeholder="Enter The Number1"> <br><br>
+<input #num2 type="text" class="form-control w-25" placeholder="Enter The Number2"> <br><br>
+<button (click)="onAddition(num1.value,num2.value)" class="btn btn-success">Addition</button><br><br>
+<input [value]="result" class="form-control w-25" type="text" placeholder="Result">
+<hr> -->
+
+<!-- Two Way Data Binding 
+ngModel
+    - It iS attribute Directive
+    - We have to import one module i.e. FormsModule =>in app.module.ts file => in import section 
+    - we can apply any html tag
+    - with the help of ngModel we get updated data 
+    - we have use a notation that is called banana in the box notation 
+    - [(ngModel)]="propertyname"
+-->
+<!-- 
+<input type="text" placeholder="Enter the Name"
+    [(ngModel)]="name"
+>
+<h2> {{name}} </h2> -->
+
+
+<input [(ngModel)]="username"  type="text" placeholder="Enter the Username"><br><br>
+<input [(ngModel)]="password" type="password" placeholder="Enter the Password"><br><br>
+<button (click)="onLogin()" >Login</button>
