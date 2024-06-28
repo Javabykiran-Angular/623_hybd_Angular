@@ -1,0 +1,13 @@
+<p>eventbinding3 works!</p>
+
+<!-- change 
+    - U can apply any HTML tag 
+-->
+
+<input #inputname type="text" (change)="onChange(inputname.value)" placeholder="Enter the name">
+<!-- K/B Event 
+    
+-->
+<br><br>
+<input type="text" (keyup)="onKeyUp()"  placeholder="Key Up Event " ><hr>
+<input type="text" (keydown)="onKeyDown()"  placeholder="Key Down Event ">
