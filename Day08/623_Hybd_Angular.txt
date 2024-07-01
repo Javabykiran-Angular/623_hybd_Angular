@@ -1,0 +1,50 @@
+Last Lecture Agenda
+1 Change Event 
+	<input (change)="onChange()">
+	
+	.ts file 
+	onChange(){
+		...
+	}
+2 K/B Event 
+	1 keyup
+	
+		<input (keyup)="onKeyup()">
+		
+		<input (keydown)="onKeydown()">
+	2 keydown
+3 Structural Directives
+	- to modify/manipulate ur DOM Structure dynamically for that we use structural directive
+	1 *ngIf => if u ant to check condition dynamically and mofify ur DOM Structure according that 
+	2 *ngFor => if u want iterate dynamically then we use 
+	3 *ngSwitch => To execute a specific case for that we use 
+	
+4 *ngIf directive
+	
+		<div *ngIf="rating<4; else elsepart">
+			....
+		</div>
+		
+	 <ng-template>
+			...
+	  </ng-template>
+	
+ <ng-template> => It is component Directive
+
+
+
+summary & Interview Questions
+1 How to use change event?
+2 How to perform Event Binding Without Event Handler?
+3 Explain Structural Directives
+
+Today's Lecture Agenda
+1 *ngFor 
+2 *ngSwitch
+
+summary & Interview Questions
+1 how to apply *ngFor to table 
+2 how *ngSwitch directive work
+
+
+
