@@ -1,0 +1,61 @@
+Last Lecture Agenda
+1 Component Interaction
+2 @Output() 
+	- To send data from child to parent 
+	steps 
+	1 create ur custom event => use EventEmitter class 
+	2 To generate ur emit with ur data 
+	3 bind ur event => on Selector (child2)
+	4 we get the data from that event & store in property => for that we use a special variable> it is $event 
+		$event => 
+				1 It is a special variable given by Angular
+				2 It gives DOM element data
+	
+	app.component.html
+	<app-parent1>
+	
+	parent.html
+	
+	....
+	
+	<app-child2 (childArrObjEvent)="childDataReceived=$event" >
+	
+	parent.ts 
+	childDataReceived:any[]=[];
+
+child1.html
+	<button (click)="onSend()">Send
+	
+	child1.ts
+	
+	@Output() childArrObjEvent=new EventEmitter();
+	
+	arrObj:any[]=[
+	...
+	]
+	
+	onSend(){
+		this.childArrObjEvent.emit(this.arrObj);
+	}
+
+summary & Interview Questions
+1 What is component interaction
+2 How to achieve component interaction
+
+
+Today's Lecture Agenda
+1 Pipe
+	- It is used to transform ur data without changing its original value 
+2 Inbuilt Pipe 
+3 Custom Pipe
+	- we have use interface=> PipeTransform
+	- transform(value:any,...args:any[])
+	- @Pipe => it is class level decorator 
+	
+	- ng g p pipename
+
+summary & Interview Questions
+1 What is Pipe 
+2 Explain some pipe in angular?
+3 How to Create Custom Pipe ?
+
