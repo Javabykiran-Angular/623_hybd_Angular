@@ -1,0 +1,78 @@
+Last Lecture Agenda
+1 Pipe
+	- It is used to transform ur data without changing its original value 
+2 Inbuilt Pipe 
+	
+	<h2> {{strdetails | lowercase }}</h2>
+	<h2> {{strdetails | uppercasecase }}</h2>
+	<h2> {{strdetails | titlecase }}</h2>
+	
+	<h2> {{0.25 | percent }}</h2>
+	<h2> {{0.025 | percent }}</h2>
+	<h2> {{0.025 | percent:'1.1' }}</h2>
+	
+	<h2> {{0.25 | currency }}</h2>
+	<h2> {{0.25 | currency:'INR' }}</h2>
+	<h2> {{0.25 | currency:'INR':'code' }}</h2>
+	
+	<h2> {{5.674325897 | number:'1.2-3' }}</h2>
+	
+	<h2> {{mydate | date}}</h2>
+	<h2> {{mydate | date:'dd-MM-yyyy'}}</h2>
+	<h2> {{mydate | date:'mediumDate'}}</h2>
+	<h2> {{mydate | date:'longDate'}}</h2>
+	
+	<h2> {{mydate | date:'longDate' | uppercase}}</h2>
+	
+
+.ts 
+mydate=new Date();
+
+3 Custom Pipe
+	- we have use interface=> PipeTransform
+	- transform(value:any,...args:any[])
+	- @Pipe => it is class level decorator 
+	
+	- ng g p pipename
+	
+	transform(value:string,start:number=0,end:number=15){
+			let temp= value.substring(start,end);
+			
+			return temp+"...";
+	}
+	
+	custompipe.html
+	
+	<h2>{{strdetails | summary}}</h2>
+	<h2>{{strdetails | summary:0:35}}</h2>
+
+summary & Interview Questions
+1 What is Pipe 
+2 Explain some pipe in angular?
+3 How to Create Custom Pipe ?
+
+
+Today's Lecture Agenda
+1 What it is Services?
+	- It is Simple Class
+2 What is use of Service?
+	- It is used to write a BL
+	- It is used to code maintaibilty 
+	- It is used to code resualbility 
+	- It is used to isolate ur component 
+	- It is used for connect ur backend server 
+	- It is used for auth purpose 	
+	
+	ng g s servicename
+	
+3 How to Use Dependancy Injection
+4 Where to use Service?
+5 Angular Component Hook
+
+
+summary & Interview Questions
+1 What it is Services?
+2 What is use of Service?
+3 How to Use Dependancy Injection
+4 Where to use Service?
+
