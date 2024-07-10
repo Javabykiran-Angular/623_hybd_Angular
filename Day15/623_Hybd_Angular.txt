@@ -1,0 +1,91 @@
+Last Lecture Agenda
+1 Post method
+	<div>
+		<input #title>
+		<input #body>
+		<button (click)="onSend(title.value,body.value)" > 
+		
+		.ts 
+		onSend(mytitle:string,mybody:string){
+		
+			let obj={
+				title:mytitle,
+				body:mybody
+			}
+			this.service.PostData(obj)
+			.subscribe((response)=>{
+				console.log(response)
+			})
+			
+		}
+	</div>
+	
+	.service.ts
+	PostData(obj:any){
+		return 	(this.http.post(this.url,obj))
+	}
+2 put method 
+	
+	<div [hidden]="isHidden" >
+		<input [(ngModel)]="id" readonly>
+		....
+		<button (click)="onupdate()">
+	</div>
+	
+	
+	.ts 
+	isHidden:boolean=true;
+	id,title,body...
+	
+	onEdit(item:any){
+	this.isHidden=false;
+	this.id=item.id;
+	...
+	
+	}
+	
+	onupdate(){
+		let obj={
+			id:this.id,
+			title:this.title
+			..
+		}
+		
+		this.service.UpdateData(obj)
+		.subscribe((response)=>{
+			console.log(response)
+		})
+	}
+ 
+ service.ts 
+ UpdateData(obj:any){
+	return (this.http.put(`${this.url}/${obj.id}`,obj));
+ }
+
+summary & Interview Questions
+1 How to send data from Angular to backend server?
+2 How to Update any particular data in Angular?
+
+
+Today's Lecture Agenda
+1 delete method
+2 Handling Error 
+3 Routing
+	- navigation from one component to another component
+4 Routing Steps
+	1 configure the route 
+	2 use <router-outlet> => it is component directive 
+	3 establish the link/navigate method between component
+	
+5 routerLink
+6 wild cart operator
+7 empty path
+
+
+summary & Interview Questions
+1 How delete method Works in angular?
+2 What is Routing
+3 How to implement routing?
+4 what is purpose of routerLink?
+5 what is use of wild cart operator?
+6 What is empty path?

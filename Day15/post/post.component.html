@@ -1,0 +1,51 @@
+<p>post works!</p>
+
+<div class="container">
+    <label for="">Title:: </label>
+    <input #inputTitle type="text" class="form-control w-25" placeholder="Enter the Title"><br>
+    <label for="">Body:: </label>
+    <input #inputBody type="text" class="form-control w-25" placeholder="Enter the Body"><br>
+    <button (click)="onSend(inputTitle.value,inputBody.value)" class="btn btn-success">Send</button>
+
+</div>
+
+<hr>
+<div class="container" [hidden]="isHidden">
+   <div class="mt-2 mb-2">
+        <label for="">ID::  </label>
+        <input [(ngModel)]="myid" type="text" class="form-control" placeholder="Enter the ID::" readonly>    
+    </div>
+    <div class="mt-2 mb-2">
+        <label for="">Title::  </label>
+        <input [(ngModel)]="mytitle"  type="text" class="form-control" placeholder="Enter the Title::">    
+    </div>
+    <div class="mt-2 mb-2">
+        <label for="">Body::  </label>
+        <input [(ngModel)]="mybody"  type="text" class="form-control" placeholder="Enter the body::">    
+    </div>
+    <button (click)="onUpdate()" class="btn btn-success">Update</button>
+</div>
+
+<hr>
+<div class="container">
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Action</th>
+            <th>Title</th>
+            <th>Body</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of posts">
+            <td> {{item.id}} </td>
+            <td><button (click)="onEdit(item)" class="btn btn-warning">Edit</button>
+            <button (click)="onDelete(item.id)" class="btn btn-danger">Delete</button>
+            </td>
+            <td> {{item.title}} </td>
+            <td> {{item.body}} </td>
+        </tr>
+    </tbody>
+</table>
+</div>
