@@ -1,0 +1,56 @@
+Last Lecture Agenda
+1 delete method
+2 Handling Error 
+3 Routing
+	- navigation from one component to another component
+4 Routing Steps
+	1 configure the route 
+		app-routing.module.ts
+		const routes:Routes[]=[
+			{
+				path:"",component:HomeComoponent
+			},
+			{
+				path:"Page1",component:Page1Component
+			},
+			...
+			,
+			{
+				path:"**",component:NotFoundComponent
+			}
+		]
+	2 use <router-outlet> => it is component directive 
+		app.component.html
+		<router-outlet>
+	3 establish the link/navigate method between component
+		home.html
+		<a routerLink="/Page1">Page1
+		....
+	
+5 routerLink
+6 wild cart operator
+7 empty path
+
+
+summary & Interview Questions
+1 How delete method Works in angular?
+2 What is Routing
+3 How to implement routing?
+4 what is purpose of routerLink?
+5 what is use of wild cart operator?
+6 What is empty path?
+
+
+Today's Lecture Agenda
+1 send parameter
+2 Routing using navigate method
+	- It works on .ts file component file 	
+3 Lazy Loading
+4 Create Custom Module
+5 Create Custom routing file
+
+summary & Interview Questions
+1 What is Routing
+2 How to send parameter to component
+3 What is Lazy Loading?
+4 How to use navigate method
